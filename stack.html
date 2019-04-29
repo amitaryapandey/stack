@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array Methods</h2> 
+<script>
+var fruits = [];
+function myFunction(){
+var x=document.getElementById('just').value;
+fruits.push(x);
+document.getElementById('just').value='';
+document.getElementById('stack').innerHTML=fruits;
+}
+function myFun(){
+fruits.pop();
+document.getElementById('stack').innerHTML=fruits;
+}
+</script>
+<input type="text" id="just">
+<input type="button" value="push" onclick="myFunction()">
+<input type="button" value="pop" onclick="myFun()">
+<p id="stack"></p>
+</body>
+</html>
