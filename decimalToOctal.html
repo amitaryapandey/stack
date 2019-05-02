@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function myFun()
+{
+var a= document.getElementById("hello").value;
+  var b = parseInt(a).toString(8)
+  document.getElementById("demo").innerHTML=b;
+}
+</script>
+<input type="text" id='hello'>
+<button onclick="myFun()">Try</button>
+<p id="demo"></p>
+</body>
+</html>

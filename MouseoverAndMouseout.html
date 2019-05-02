@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function myFun()
+{
+document.getElementById("demo").innerHTML="onmouseout"
+}
+function myFunOut(){
+document.getElementById("demo").innerHTML="onmouseover"
+}
+</script>
+<button onmouseout='myFunOut()'onmouseover="myFun()">The time is?</button>
+<p id="demo"></p>
+</body>
+</html>
