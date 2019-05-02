@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>date postfix.</h1>
+
+<script>
+function myAdd(){
+var a=document.getElementById("textBox1").value;
+var b=document.getElementById("textBox2").value;
+document.getElementById("demo").innerHTML=parseInt(a)+parseInt(b);
+}
+function mySubs(){
+var a=document.getElementById("textBox1").value;
+var b=document.getElementById("textBox2").value;
+document.getElementById("demo").innerHTML=parseInt(a)-parseInt(b);
+}
+function myMul(){
+var a=document.getElementById("textBox1").value;
+var b=document.getElementById("textBox2").value;
+document.getElementById("demo").innerHTML=parseInt(a)*parseInt(b);
+}
+function myDiv(){
+var a=document.getElementById("textBox1").value;
+var b=document.getElementById("textBox2").value;
+document.getElementById("demo").innerHTML=parseFloat(a)/parseFloat(b);
+}
+</script>
+<input type="text" id='textBox1'>
+<input type="text" id='textBox2'><br>
+<input type="button" onclick="myAdd()" value="Add">
+<input type="button" onclick="mySubs()" value="Subs">
+<input type="button" onclick="myMul()" value="Mul">
+<input type="button" onclick="myDiv()" value="Div">
+<p id="demo"></p>
+</body>
+</html>

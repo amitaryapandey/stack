@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>date postfix.</h1>
+<p id="demo"></p>
+<script>
+var d=new Date();
+var b=d.getDate();
+switch(b)
+{
+  case 1:
+  postfix = "st";
+    break;
+  case 2:
+    postfix= "nd";
+    break;
+  case 3:
+   postfix= "rd";
+    break;
+   default:
+   postfix:"th";
+}
+document.getElementById("demo").innerHTML=b+postfix;
+</script>
+
+</body>
+</html>
