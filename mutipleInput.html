@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id='just'>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+x=document.getElementById("just").value+' ';
+document.getElementById("demo").innerHTML+=x
+document.getElementById("just").value='';
+}
+</script>
+
+</body>
+</html>

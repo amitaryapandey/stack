@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+<script>
+var x=1;
+function myFunction() {
+if(x%2==0){
+ document.getElementById("demo").innerHTML +=x;
+ x++;
+}
+else{
+document.getElementById("demo").innerHTML =x+document.getElementById("demo").innerHTML;
+x++;
+}
+}
+</script>
+
+</body>
+</html>

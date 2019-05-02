@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<input type="number" id="just">
+
+<button onclick="myFunction()">iseven</button>
+
+<script>
+
+function myFunction() {
+var x=document.getElementById("just").value
+ if(x%2==0)
+ {
+ document.getElementById("demo").innerHTML='even' 
+ }
+ else
+ {
+ document.getElementById("demo").innerHTML='odd' 
+ }
+ document.getElementById("just").value=''
+}
+</script>
+
+</body>
+</html>

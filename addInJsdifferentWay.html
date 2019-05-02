@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var x;
+var y;
+function myFunc(){
+var x=document.getElementById("textBox1").value;
+var y=document.getElementById("textBox2").value;
+if(x!=''&&y!=''){
+document.getElementById("demo").innerHTML=x+y;
+}
+else{
+document.getElementById("demo").innerHTML="Please enter valid data"
+}
+}
+</script>
+<input type="text" id="textBox1">
+<input type="text" id="textBox2">
+<input type="button" value="Add" onclick="myFunc()">
+<p id="demo"></p>
+</body>
+</html>

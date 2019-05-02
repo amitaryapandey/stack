@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function myFunc(){
+var y=1
+var x=document.getElementById("textBox1").value;
+for(var i=1;i<=x;i++)
+{
+y=y*i;
+}
+document.getElementById("demo").innerHTML=y;
+}
+</script>
+<input type="text" id="textBox1">
+<input type="button" value="Factorial" onclick="myFunc()">
+<p id="demo"></p>
+</body>
+</html>
