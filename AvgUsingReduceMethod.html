@@ -1,0 +1,36 @@
+</html>
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" id="facTextbox">
+    <button onclick="avgArray()">Avg</button>
+    <button onclick="myFunction()">Sum</button>
+    <button onclick="arrayPush()">Push</button>
+    <p>Sum of numbers in array: <span id="demo"></span></p>
+    <p>Numbers in array: <span id="arrayDisplay"></span></p>
+    <p>Average of array: <span id="average"></span></p>
+
+    <script>
+        var numbers = [];
+        var sum;
+        function avgArray() {
+            var average = (sum / numbers.length);
+            document.getElementById("average").innerHTML = average;
+        }
+        function getSum(total, num) {
+            return parseInt(total) + parseInt(num);
+        }
+        function myFunction() {
+            document.getElementById("demo").innerHTML = numbers.reduce(getSum);
+            sum = numbers.reduce(getSum);
+        }
+        function arrayPush() {
+            numbers.push(document.getElementById("facTextbox").value)
+            document.getElementById("arrayDisplay").innerHTML = numbers;
+        }
+    </script>
+
+</body>
+
+</html>

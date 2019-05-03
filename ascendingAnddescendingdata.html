@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <button onclick="myAscending()">Ascending</button>
+  <button onclick="myDescending()">Descending</button>
+
+  <p id="studentDetail"></p>
+
+  <script>
+    var student = [
+      { name: "syam", mark: 95 },
+      { name: "ram", mark: 45 },
+      { name: "gyan", mark: 66 }
+    ];
+
+    studentDetail();
+
+    function myAscending() {
+      student.sort(function (a, b) { return a.mark - b.mark });
+      studentDetail();
+    }
+    function myDescending() {
+      student.sort(function (a, b) { return b.mark - a.mark });
+      studentDetail();
+    }
+    function studentDetail() {
+      document.getElementById("studentDetail").innerHTML =
+        student[0].name + " " + student[0].mark + "<br>" +
+        student[1].name + " " + student[1].mark + "<br>" +
+        student[2].name + " " + student[2].mark;
+    }
+  </script>
+
+</body>
+
+</html>

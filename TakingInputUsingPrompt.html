@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var greet;
+            var hours = new Date().getHours()
+            if (hours > 4 && hours < 12) {
+                greet = "hello good morning"
+            }
+            else if (hours >= 12 && hours < 17) {
+                greet = "good afternoon"
+            }
+            else if (hours >= 17 && hours < 21) {
+                greet = "Good evening"
+            }
+            else {
+                greet = "good night"
+            }
+            var name = prompt("Please enter your name", "");
+            if (name != null) {
+                document.getElementById("demo").innerHTML =
+                    "Hello " + name + "! " + greet;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

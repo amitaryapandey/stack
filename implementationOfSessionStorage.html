@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="sessionStorageWorking()"> Session storage</button>
+    <p id="sessionStoringName"></p>
+    <script>
+        var person = {
+            name: "amit"
+        }
+        function sessionStorageWorking() {
+
+            sessionStorage.setItem("name", person.name);
+            var tokenData = sessionStorage.getItem("name");
+            document.getElementById("sessionStoringName").innerHTML = tokenData;
+            sessionStorage.removeItem("name");
+        }
+    </script>
+</body>
+
+</html>

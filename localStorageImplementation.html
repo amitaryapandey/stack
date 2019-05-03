@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="localStorageWorking()"> local storage</button>
+    <p id="localStoringName"></p>
+    <script>
+        var person = {
+            name: "amit"
+        }
+        function localStorageWorking() {
+            localStorage.setItem("name", person.name);
+            var x = localStorage.getItem("name");
+            document.getElementById("localStoringName").innerHTML = x;
+            localStorage.removeItem("name");
+        }
+    </script>
+</body>
+
+</html>
